@@ -1,0 +1,24 @@
+#Rubrik{
+	text-align:center;
+}
+
+
+#text{
+	max-width:70%;
+	text-align:center;
+	margin-left:14%;
+}
+
+#textForm{
+	text-align:center;
+}
+
+form{
+	max-width:30%;
+	margin-left:35%;
+	padding-bottom:10px;
+}
+
+#bankid{
+	margin-left:35%;
+}

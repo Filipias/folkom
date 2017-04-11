@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Folkomröstning ID</title>
+		
+		<!-- Egen CSS -->
+		<link rel="stylesheet" href="./css/style.css">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="Rubrik">
+			<h2>Tappat ditt ID i snön?</h2>
+			<h3>Vi har lösningen!</h3>
+		</div>
+			<p id="text">Med bankID ska man kunna visa sitt legitimation, det gör det lättare att
+			skaffa nytt legitimation och även kunna legitimera sig utan fysiskt ID. Det är lika säkert som när du legitimerar dig 
+			på din bank på internet via e-legitimation. Här nedan ser du ett exempel på hur det kan se ut.</p>
+		<div id="Bild">
+			<img id="bankid" alt="BankID screenshot" src="./image/BankID.jpg" usemap="#map"/>
+		</div>
+		<map name="map">
+			<area shape="rect" coords="111,635,279,677" href="index2.html" alt="Visa id">
+		</map>
+		<p id="textForm">Vill du ha det lite lättare? Fyll i formuläret nedan och starta folkomröstning</p>
+		<form method="POST" action="Skicka.php">
+			<div class="form-group">
+				<label for="name">Namn</label>
+				<input type="text" class="form-control" name="name" placeholder="Ditt namn">
+			</div>
+			<div class="form-group">
+				<label for="ort">Ort</label>
+				<input type="text" class="form-control" name="ort" placeholder="Din ort">
+			</div>
+			<div class="form-group">
+				<label for="mail">Mail</label>
+				<input type="email" class="form-control" name="mail" placeholder="Din email">
+			</div>
+			<div class="form-group">
+				<label for="personnummer">Personnummer</label>
+				<input type="number" class="form-control" name="personnummer" placeholder="ÅÅMMDD-XXXX">
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input">
+					Jag accepterar <a href="villkor.html">villkoren</a>
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Skicka</button>
+			<a href="resultat.php"><button type="button" class="btn btn-primary">Visa resultat</button></a>
+		</form>
+	</body>
+</html>
